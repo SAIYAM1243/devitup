@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import "./portfolio.scss";
+import "./Portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import EverythingElse from '../../assets/everythingelse.png'
 import Rupee from '../../assets/rupee.png';
