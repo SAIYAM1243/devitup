@@ -1,0 +1,46 @@
+@import '../../app.scss';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+10&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Jersey+10&family=Oswald:wght@200..700&display=swap');
+
+.preloader {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    background: #0c0c1d;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden !important;
+
+    @include mobile {
+        visibility: hidden;
+    }
+
+    .texts-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 55px;
+        width: 900px;
+        font-size: 70px;
+        overflow: hidden;
+        opacity: 0;
+        color: white;
+
+        span {
+            font-family: "Jersey 10", sans-serif;
+            letter-spacing: normal;
+        }
+
+        @include mobile {
+            font-size: 30px;
+            width: 500px;
+        }
+    }
+}

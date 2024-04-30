@@ -1,0 +1,208 @@
+@import "../../app.scss";
+
+.services {
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .textContainer {
+    flex: 1;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include mobile {
+      align-self: center;
+      flex: 0;
+      text-align: center;
+      flex-direction: column;
+      margin-top: 85px;
+    }
+
+    p {
+      font-weight: 200;
+      font-size: 20px;
+      color: gray;
+      text-align: right;
+
+    }
+
+    hr {
+      width: 500px;
+      border: none;
+      border-top: 0.5px solid gray;
+
+      @include mobile {
+        width: 300px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .titleContainer {
+    flex: 2;
+    display: flex;
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+
+    @include mobile {
+      width: 100%;
+      flex: 1;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      @include mobile {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
+
+      img {
+        width: 225px;
+        height: 75px;
+        border-radius: 50px;
+        object-fit: cover;
+
+        @include mobile {
+          width: 200px;
+          height: 50px;
+        }
+      }
+
+      h1 {
+        font-size: 86px;
+        font-weight: 100;
+
+        @include mobile {
+          font-size: 50px;
+        }
+      }
+
+      button {
+        width: 300px;
+        height: 100px;
+        border-radius: 50px;
+        background-color: orange;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+
+        @include mobile {
+          font-size: 16px;
+          width: 150px;
+          height: 50px;
+        }
+      }
+    }
+  }
+
+  .listContainer {
+    flex: 2;
+    display: flex;
+    max-width: 1366px;
+    margin: auto;
+    margin-bottom: 20px;
+
+    @include mobile {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 30px;
+
+    }
+
+    .box {
+      padding: 22px;
+      border: 0.5px solid gray;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @include mobile {
+        border: none;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+      }
+
+      h2 {
+        font-size: 40px;
+        justify-content: center;
+        display: flex;
+
+        @include mobile {
+          font-size: 25px;
+        }
+      }
+
+      h3 {
+        font-size: 20px;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        display: flex;
+
+        @include mobile {
+          display: none;
+        }
+      }
+
+      p {
+
+        font-size: 14px;
+        text-align: center;
+
+        @include mobile {
+          display: none;
+        }
+      }
+
+      button {
+        padding: 10px;
+        background-color: orange;
+        border: none;
+        cursor: pointer;
+
+        @include mobile {
+          background-color: transparent;
+          border: 1px solid orange;
+          border-radius: 5px;
+          color: orange;
+          width: 50%;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+.buttons-brochure {
+  margin-top: 10px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  @include mobile {
+    display: flex;
+  }
+
+  button {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    background-color: transparent;
+    margin-right: 0;
+    color: white;
+    cursor: pointer;
+    box-shadow: 5px 5px rgba(255, 255, 255, 0.2);
+    font-weight: 300;
+    z-index: 3;
+  }
+}

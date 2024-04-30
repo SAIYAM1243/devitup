@@ -1,0 +1,278 @@
+@import "../../app.scss";
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+.contact {
+  height: 85%;
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  @include mobile {
+    width: 100%;
+    margin-top: 40px;
+    flex-direction: column;
+  }
+
+  .textContainer {
+    flex: 1;
+    display: flex;
+    // margin-left: 65px;
+    flex-direction: column;
+    gap: 40px;
+
+    @include mobile {
+      gap: 10px;
+      text-align: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 100px;
+      line-height: 88px;
+
+      @include mobile {
+        font-size: 36px;
+      }
+    }
+
+    span {
+      font-weight: 300;
+
+
+    }
+
+    .item {
+      @include mobile {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .formContainer {
+    flex: 1;
+    position: relative;
+
+    @include mobile {
+      width: 100%;
+      padding-left: 50px;
+      padding-right: 50px;
+
+    }
+
+
+    .phoneSvg {
+      stroke: rebeccapurple;
+      position: absolute;
+      margin: auto;
+      z-index: -1;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @include mobile {
+        gap: 10px;
+      }
+
+      button {
+        padding: 20px;
+        border: none;
+        background-color: rebeccapurple;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 20px;
+
+        @include mobile {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #0c0c20;
+
+  @include mobile {
+    gap: 10px;
+    visibility: hidden;
+  }
+
+  h2 {
+    position: absolute;
+    font-size: 30px;
+    margin-left: 30px;
+
+    @include mobile {
+      font-size: 20px;
+
+    }
+  }
+
+  div {
+    display: flex;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    font-style: normal;
+    justify-content: center;
+    letter-spacing: 2px;
+    align-items: center;
+
+    a {
+      font-family: "Jersey 10", sans-serif;
+      color: rebeccapurple;
+      cursor: pointer;
+    }
+
+
+    @include mobile {
+      font-size: 20px;
+
+    }
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 3px;
+
+    @include mobile {
+      font-size: 20px;
+
+    }
+  }
+}
+
+.input-group {
+
+  .input {
+    border: solid 1.5px #9e9e9e;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #f5f5f5;
+    transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .user-label {
+    position: absolute;
+    left: 15px;
+    color: #e8e8e8;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include mobile {
+      left: 60px;
+    }
+  }
+
+  .input:focus,
+  input:valid {
+    outline: none;
+    border: 1.5px solid #1a73e8;
+  }
+
+  .input:focus~label,
+  input:valid~label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: #0c0c1d;
+    padding: 0 .2em;
+    color: #2196f3;
+  }
+
+
+  .input2 {
+    border: solid 1.5px #9e9e9e;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #f5f5f5;
+    transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .user-label2 {
+    position: absolute;
+    left: 15px;
+    top: 75px;
+    color: #e8e8e8;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    @include mobile {
+      left: 60px;
+      top: 65px;
+    }
+  }
+
+  .input2:focus,
+  input:valid {
+    outline: none;
+    border: 1.5px solid #1a73e8;
+  }
+
+  .input2:focus~label,
+  input:valid~label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: #0c0c1d;
+    padding: 0 .2em;
+    color: #2196f3;
+  }
+
+  .input3 {
+    border: solid 1.5px #9e9e9e;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #f5f5f5;
+    transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  }
+
+  .user-label3 {
+    position: absolute;
+    left: 15px;
+    top: 150px;
+    color: #e8e8e8;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include mobile {
+      left: 60px;
+      top: 130px;
+    }
+  }
+
+  .input3:focus,
+  input:valid {
+    outline: none;
+    border: 1.5px solid #1a73e8;
+  }
+
+  .input3:focus~label,
+  input:valid~label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: #0c0c1d;
+    padding: 0 .2em;
+    color: #2196f3;
+  }
+}
